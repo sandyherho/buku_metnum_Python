@@ -15,5 +15,5 @@ for iterasi in range(1, 101):
     if abs(x_baru - x) < 0.000001:
         break
     x = x_baru
-print('Akar: %0.5f' % x_baru)
+print('Akar: %0.5f' %x_baru)
 print('Jumlah iterasi: %d' %iterasi)
