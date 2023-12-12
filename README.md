@@ -1,8 +1,8 @@
 # `buku_metnum_Python`: Pengantar Metode Numerik Terapan Menggunakan Python
 
-![SCIPY](https://img.shields.io/badge/SciPy-654FF0?style=for-the-badge&logo=SciPy&logoColor=white)
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![numpy](https://img.shields.io/badge/Numpy-777BB4?style=for-the-badge&logo=numpy&logoColor=white)
-![Python](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)
+![SCIPY](https://img.shields.io/badge/SciPy-654FF0?style=for-the-badge&logo=SciPy&logoColor=white)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT).
 [![GitHub watchers](https://img.shields.io/github/watchers/Naereen/StrapDown.js.svg?style=social&label=Watch&maxAge=2592000)](https://github.com/sandyherho/buku_metnum_Python/watchers)
@@ -30,28 +30,12 @@ Jika kalian merasa buku ini berguna silakan kutip karya kami:
 ```
 
 ## Pra-syarat
+Kalian dapat menjalankannya dengan berbagai versi Python 3 asalkan mempunyai pustaka berikut ini:
 
 - [Matplotlib](https://matplotlib.org/)
 - [NumPy](https://numpy.org/)
 - [SciPy](https://pandas.pydata.org/)
 
-Lingkungan komputasi buku ini dapat direproduksi dengan menjalankan perintah sebagai berikut:
-
-```bash
-# membuat lingkungan virtual (tidak wajib, namun direkomendasikan)
-python -m venv venv
-source venv/bin/activate  # di Windows: venv\Scripts\activate
-
-# instal dependensi
-pip install -r requirements.txt
-```
-
-, atau bagi pengguna Anaconda dapat menggunakan perintah sebagai berikut:
-
-```bash
-conda env create -f environment.yml
-conda activate buku_metnumPy
-```
 
 ## Ucapan Terimakasih
 Kami berterimakasih kepada para alumni dan mahasiwa/i di Program Studi Meteorologi ITB yang mendukung proses penyusunan buku ini.
