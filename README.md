@@ -9,7 +9,7 @@
 [![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
 
 
-Repositori ini memuat kode dan gambar yang digunakan untuk menyusun buku Pengantar Metode Numerik Terapan Menggunakan Python. Buku ini disusun oleh: [S. H. S. Herho](https://scholar.google.com/citations?user=uYQgjxMAAAAJ&hl=id), [M. R. Syahputra]()
+Repositori ini memuat kode dan gambar yang digunakan untuk menyusun buku Pengantar Metode Numerik Terapan Menggunakan Python. Buku ini disusun oleh: [S. H. S. Herho](https://scholar.google.com/citations?user=uYQgjxMAAAAJ&hl=id), [M. R. Syahputra](https://scholar.google.co.id/citations?user=3gh7cVEAAAAJ&hl=en), [N. J. Trilaksono](https://scholar.google.com/citations?user=GYgd5RQAAAAJ&hl=en)
 
 
 ## Pengutipan
@@ -17,7 +17,7 @@ Repositori ini memuat kode dan gambar yang digunakan untuk menyusun buku Pengant
 Jika kalian merasa buku ini berguna silakan kutip karya kami:
 
 ```
-@article{herhoEtAl24a_itf,
+@article{Herhodkk24_numerik,
          author={Herho, S. H. S. and Syahputra, M. R. and Trilaksono, N. J.},
          title={Pengantar Metode Numerik Terapan Menggunakan Python},
          journal={xxxxx},
