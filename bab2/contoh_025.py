@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 """
 contoh_025.py
 
