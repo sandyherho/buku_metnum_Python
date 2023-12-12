@@ -4,18 +4,17 @@
 ![numpy](https://img.shields.io/badge/Numpy-777BB4?style=for-the-badge&logo=numpy&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)
 
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT).
 [![GitHub watchers](https://img.shields.io/github/watchers/Naereen/StrapDown.js.svg?style=social&label=Watch&maxAge=2592000)](https://github.com/sandyherho/buku_metnum_Python/watchers)
 [![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
 
 
 Repositori ini memuat kode dan gambar yang digunakan untuk menyusun buku Pengantar Metode Numerik Terapan Menggunakan Python. Buku ini disusun oleh: [S. H. S. Herho](https://scholar.google.com/citations?user=uYQgjxMAAAAJ&hl=id), [M. R. Syahputra]()
-## License
-Repositori ini berlisensi [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT).
 
-## Citation
-If you find these data useful, please  consider citing our paper:
 
+## Pengutipan
+
+Jika kalian merasa buku ini berguna silakan kutip karya kami:
 
 ```
 @article{herhoEtAl24a_itf,
