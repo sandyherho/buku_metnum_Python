@@ -17,15 +17,10 @@ Repositori ini memuat kode dan gambar yang digunakan untuk menyusun buku Pengant
 Jika kalian merasa buku ini berguna silakan kutip karya kami:
 
 ```
-@article{Herhodkk24_numerik,
-         author={Herho, S. H. S. and Syahputra, M. R. and Trilaksono, N. J.},
-         title={Pengantar Metode Numerik Terapan Menggunakan Python},
-         journal={xxxxx},
-         year={2024},
-         volume={x},
-         number={x},
-         pages={x - x},
-         doi={xx}
+@book{Herhodkk24_numerik,
+    author={Herho, S. H. S. and Syahputra, M. R. and Trilaksono, N. J.},
+    title={Pengantar Metode Numerik Terapan Menggunakan Python},
+    publisher={xxx}
 }
 ```
 
