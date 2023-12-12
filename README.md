@@ -25,11 +25,11 @@ Jika kalian merasa buku ini berguna silakan kutip karya kami:
 ```
 
 ## Pra-syarat
-Kalian dapat menjalankannya dengan berbagai versi [Python 3](https://www.python.org/) asalkan mempunyai pustaka berikut ini:
+Kalian dapat menjalankannya dengan berbagai versi [Python 3](https://www.python.org/) asalkan kalian mempunyai pustaka berikut ini:
 
 - [Matplotlib](https://matplotlib.org/)
 - [NumPy](https://numpy.org/)
-- [SciPy](https://pandas.pydata.org/)
+- [SciPy](https://scipy.org//)
 
 
 ## Ucapan Terimakasih
