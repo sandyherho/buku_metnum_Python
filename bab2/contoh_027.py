@@ -9,7 +9,7 @@ SHSH <sandy.herho@email.ucr.edu>
 12/13/23
 """
 
-x1 = 0 # nilai pertama di interval             
+x1 = 0  # nilai pertama di interval             
 x2 = 1.2 # nilai kedua di interval            
 y1 = 2*x1**2-5*x1+3 # perhiungan y1
 y2 = 2*x2**2-5*x2+3 # perhitungan y2
