@@ -21,15 +21,15 @@ y = np.array([0, 7, 17, 26, 35, 45])
 n = len(x)
 
 # Menghitung koefisien regresi
-alpha = (np.mean(y) * np.sum(x**2) - np.mean(x) * np.sum(x*y)) / (np.sum(x**2) - n * np.mean(x)**2)
-beta = (np.sum(x*y) - np.mean(x) * np.sum(y)) / (np.sum(x**2) - n * np.mean(x)**2)
+alpha_0 = (np.mean(y) * np.sum(x**2) - np.mean(x) * np.sum(x*y)) / (np.sum(x**2) - n * np.mean(x)**2)
+alpha_1 = (np.sum(x*y) - np.mean(x) * np.sum(y)) / (np.sum(x**2) - n * np.mean(x)**2)
 
 # Persamaan garis regresi linier
-gar_reg = alpha + beta * x
+gar_reg = alpha_0 + alpha_1 * x
 
 # Menampilkan persamaan garis regresi linier
 print('Persamaan garis regresi linier: ')
-print('f(x) = (%.3f) + (%.3f)x' % (alpha, beta))
+print('f(x) = (%.3f) + (%.3f)x' % (alpha_0, alpha_1))
 
 # Memplot titik data dan garis regresi linier
 plt.scatter(x, y, label='Data')
