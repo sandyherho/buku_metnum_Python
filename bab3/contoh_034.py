@@ -33,8 +33,14 @@ for baris in range(n+1):
 
 a = np.linalg.solve(A, B)
 
+# Tampilkan persamaan regresi
+print ('Suku Banyak:')
+print('f(x) = \t %f'%a[0])
+for i in range(1, n+1):
+    print('\t %+f x^%d' % (a[i],i))
+
 # Plot data dan hasil regresi
-plt.scatter(x, y, label='Data Asli')
+plt.scatter(x, y, label='Data')
 x_reg = np.linspace(min(x), max(x), 100)
 y_reg = sum(a[i] * x_reg**i for i in range(n+1))
 plt.plot(x_reg, y_reg, label='Regresi Suku Banyak (Derajat %d)' %n)
