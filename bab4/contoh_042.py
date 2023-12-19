@@ -3,7 +3,7 @@
 """
 contoh_042.py
 
-Metode Beda Hingga
+Metode Beda Tengah
 
 SHSH <sandy.herho@email.ucr.edu>
 12/17/23
