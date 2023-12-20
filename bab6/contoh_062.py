@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 
 """
-contoh_061.py
+contoh_062.py
 
-Metode Eliminasi Gauss (1)
+Metode Eliminasi Gauss (2)
 
 SHSH <sandy.herho@email.ucr.edu>
 12/19/23
@@ -11,10 +11,10 @@ SHSH <sandy.herho@email.ucr.edu>
 
 import numpy as np
 
-a = np.array([[2, 7, -1, 3, 1],
-             [2, 3, 4, 1, 7],
-             [6, 2, -3, 2, -1],
-             [2, 1, 2, -1, 2],
+a = np.array([[0, 7, -1, 3, 1],
+           	 [2, 3, 4, 1, 7],
+             [6, 2, 0, 2, -1],
+             [2, 1, 2, 0, 2],
              [3, 4, 1, -2, 1]],float)
 
 b = np.array([5, 7, 2, 3, 4], float)
@@ -23,7 +23,12 @@ x = np.zeros(n, float)
 
 # Eliminasi
 for k in range(n-1):
+    if a[k, k] == 0:
+        for j in range (n):
+            a[k,j], a[k+1, j] = a[k+1, j], a[k,j]
+        b[k], b[k+1] = b[k+1], b[k]
     for i in range(k+1, n):
+        if a[i, k] == 0: continue
         fktr = a[k, k] / a[i, k]
         b[i] = b[k] - fktr*b[i]
         for j in range(k, n):
@@ -37,6 +42,6 @@ for i in range(n-2, -1, -1):
         suku += a[i, j]*x[j]
     x[i] = (b[i] - suku)/a[i, i]
 
-print("Solusi SPL: ")
+print("Solusi SPL:")
 print("\n")
 print(x)
