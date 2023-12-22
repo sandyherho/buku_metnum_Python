@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 """
-contoh_076.py
+contoh_077.py
 
 Numerik vs. Analitik
 PDB Orde 2
