@@ -28,4 +28,4 @@ def dy(y, x):
 y0 = [0, 2]
 x = np.arange(np.pi, 2*np.pi, .1) # [pi, 2pi], h = 0,1
 sol = odeint(dy, y0, x)
-print(sol)
+print(sol) 
