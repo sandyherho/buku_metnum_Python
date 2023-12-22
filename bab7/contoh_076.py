@@ -17,28 +17,28 @@ dfdy = lambda x, y: x * y
 f = lambda x: np.exp(x**2/2)
 
 # Metode Euler
-def euler_method(x, y, h, n):
-    results = [(x, y)]
+def metode_euler(x, y, h, n):
+    hasil = [(x, y)]
     for _ in range(n):
         y += h * dfdy(x, y)
         x += h
-        results.append((x, y))
-    return results
+        hasil.append((x, y))
+    return hasil
 
 # Metode RK2 (Runge-Kutta orde 2)
-def rk2_method(x, y, h, n):
-    results = [(x, y)]
+def metode_rk2(x, y, h, n):
+    hasil = [(x, y)]
     for _ in range(n):
         K1 = h * dfdy(x, y)
         K2 = h * dfdy(x + h/2, y + K1/2)
         y += K2
         x += h
-        results.append((x, y))
-    return results
+        hasil.append((x, y))
+    return hasil
 
 # Metode RK4 (Runge-Kutta orde 4)
-def rk4_method(x, y, h, n):
-    results = [(x, y)]
+def metode_rk4(x, y, h, n):
+    hasil = [(x, y)]
     for _ in range(n):
         K1 = h * dfdy(x, y)
         K2 = h * dfdy(x + h/2, y + K1/2)
@@ -46,44 +46,44 @@ def rk4_method(x, y, h, n):
         K4 = h * dfdy(x + h, y + K3)
         y += (K1 + 2*K2 + 2*K3 + K4) / 6
         x += h
-        results.append((x, y))
-    return results
+        hasil.append((x, y))
+    return hasil
 
 # Solusi Analitik
-def analytic_solution(x_start, x_end, h):
-    x_values = np.arange(x_start, x_end + h, h)
-    y_values = [f(x) for x in x_values]
-    return list(zip(x_values, y_values))
+def solusi_analitik(x_mulai, x_akhir, h):
+    nilai_x = np.arange(x_mulai, x_akhir + h, h)
+    nilai_y = [f(x) for x in nilai_x]
+    return list(zip(nilai_x, nilai_y))
 
 # Parameter
-x_start = 0
-x_end = 2
+x_mulai = 0
+x_akhir = 2
 y0 = 1
 h = 0.5
-n = int((x_end - x_start) / h)
+n = int((x_akhir - x_mulai) / h)
 
 # Metode Euler
-euler_results = euler_method(x_start, y0, h, n)
+euler_hasil = metode_euler(x_mulai, y0, h, n)
 
 # Metode RK2
-rk2_results = rk2_method(x_start, y0, h, n)
+rk2_hasil = metode_rk2(x_mulai, y0, h, n)
 
 # Metode RK4
-rk4_results = rk4_method(x_start, y0, h, n)
+rk4_hasil = metode_rk4(x_mulai, y0, h, n)
 
 # Solusi Analitik
-analytic_results = analytic_solution(x_start, x_end, h)
+analitik_hasil = solusi_analitik(x_mulai, x_akhir, h)
 
 # Print hasil
 print("x \t\t y (Euler) \t y (RK2) \t y (RK4) \t y (analitik)")
 for i in range(n+1):
-    print("%f \t %f \t %f \t %f \t %f" % (euler_results[i][0], euler_results[i][1], rk2_results[i][1], rk4_results[i][1], analytic_results[i][1]))
+    print("%f \t %f \t %f \t %f \t %f" % (euler_hasil[i][0], euler_hasil[i][1], rk2_hasil[i][1], rk4_hasil[i][1], analitik_hasil[i][1]))
 
 # Plot hasil
-plt.plot(*zip(*analytic_results), label='Analitik', linewidth=2, color="black")
-plt.plot(*zip(*euler_results), label='Euler', linestyle= "dashdot")
-plt.plot(*zip(*rk2_results), label='RK2', linestyle= "dashdot")
-plt.plot(*zip(*rk4_results), label='RK4', linestyle= "dashdot")
+plt.plot(*zip(*analitik_hasil), label='Analitik', linewidth=2, color="black")
+plt.plot(*zip(*euler_hasil), label='Euler', linestyle= "dashdot")
+plt.plot(*zip(*rk2_hasil), label='RK2', linestyle= "dashdot")
+plt.plot(*zip(*rk4_hasil), label='RK4', linestyle= "dashdot")
 plt.xlabel('$x$', fontsize=16)
 plt.ylabel('$y$', fontsize=16)
 plt.legend()
