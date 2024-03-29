@@ -35,4 +35,4 @@ Kalian dapat menjalankannya dengan berbagai versi [Python 3](https://www.python.
 
 
 ## Ucapan Terimakasih
-Kami berterimakasih kepada para alumni dan mahasiwa/i di Program Studi Meteorologi ITB yang mendukung proses penyusunan buku ini.
+Kami berterimakasih kepada para alumni dan mahasiswa/i di Program Studi Meteorologi ITB yang mendukung proses penyusunan buku ini.
