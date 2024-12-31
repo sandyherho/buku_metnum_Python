@@ -22,7 +22,8 @@ Jika kalian merasa buku ini berguna silakan kutip karya kami:
 @book{Herhodkk24_numerik,
     author={Herho, S. H. S. and Syahputra, M. R. and Trilaksono, N. J.},
     title={Pengantar Metode Numerik Terapan Menggunakan Python},
-    publisher={xxx}
+    publisher={WCPL ITB},
+    year={2024}
 }
 ```
 
